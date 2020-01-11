@@ -51,6 +51,7 @@
 		190145CF23CA3AE600CB97F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1935978723C80D43003A8CD8 /* Assets.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -87,7 +88,6 @@
 				1935978023C80D40003A8CD8 /* SceneDelegate.swift */,
 				1935978223C80D40003A8CD8 /* ViewController.swift */,
 				1935978423C80D40003A8CD8 /* Main.storyboard */,
-				1935978723C80D43003A8CD8 /* Assets.xcassets */,
 				1935978923C80D43003A8CD8 /* LaunchScreen.storyboard */,
 				1935978C23C80D43003A8CD8 /* Info.plist */,
 			);
