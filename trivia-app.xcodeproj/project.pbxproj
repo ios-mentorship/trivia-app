@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190145D223CA3D1100CB97F5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190145D123CA3D1100CB97F5 /* Colors.xcassets */; };
 		1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935977E23C80D40003A8CD8 /* AppDelegate.swift */; };
 		1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978023C80D40003A8CD8 /* SceneDelegate.swift */; };
 		1935978323C80D40003A8CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978223C80D40003A8CD8 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190145D123CA3D1100CB97F5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1935977B23C80D40003A8CD8 /* trivia-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trivia-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1935977E23C80D40003A8CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1935978023C80D40003A8CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190145CE23CA3AD500CB97F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				190145D023CA3AEE00CB97F5 /* Colors */,
+				190145CF23CA3AE600CB97F5 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		190145CF23CA3AE600CB97F5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		190145D023CA3AEE00CB97F5 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				190145D123CA3D1100CB97F5 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		1935977223C80D40003A8CD8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +82,7 @@
 		1935977D23C80D40003A8CD8 /* trivia-app */ = {
 			isa = PBXGroup;
 			children = (
+				190145CE23CA3AD500CB97F5 /* Resources */,
 				1935977E23C80D40003A8CD8 /* AppDelegate.swift */,
 				1935978023C80D40003A8CD8 /* SceneDelegate.swift */,
 				1935978223C80D40003A8CD8 /* ViewController.swift */,
@@ -126,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1935978B23C80D43003A8CD8 /* LaunchScreen.storyboard in Resources */,
+				190145D223CA3D1100CB97F5 /* Colors.xcassets in Resources */,
 				1935978823C80D43003A8CD8 /* Assets.xcassets in Resources */,
 				1935978623C80D40003A8CD8 /* Main.storyboard in Resources */,
 			);
