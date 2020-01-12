@@ -14,6 +14,7 @@
 		190145E923CACAC400CB97F5 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */; };
 		190145EA23CACAC400CB97F5 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */; };
 		190145ED23CAD4F700CB97F5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190145EC23CAD4F700CB97F5 /* CustomButton.swift */; };
+		190145EF23CAE12E00CB97F5 /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190145EE23CAE12E00CB97F5 /* AccentButton.swift */; };
 		1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935977E23C80D40003A8CD8 /* AppDelegate.swift */; };
 		1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978023C80D40003A8CD8 /* SceneDelegate.swift */; };
 		1935978323C80D40003A8CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978223C80D40003A8CD8 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
 		190145EC23CAD4F700CB97F5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		190145EE23CAE12E00CB97F5 /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
 		1935977B23C80D40003A8CD8 /* trivia-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trivia-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1935977E23C80D40003A8CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1935978023C80D40003A8CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				1935978923C80D43003A8CD8 /* LaunchScreen.storyboard */,
 				1935978C23C80D43003A8CD8 /* Info.plist */,
 				190145EC23CAD4F700CB97F5 /* CustomButton.swift */,
+				190145EE23CAE12E00CB97F5 /* AccentButton.swift */,
 			);
 			path = "trivia-app";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190145EF23CAE12E00CB97F5 /* AccentButton.swift in Sources */,
 				190145ED23CAD4F700CB97F5 /* CustomButton.swift in Sources */,
 				1935978323C80D40003A8CD8 /* ViewController.swift in Sources */,
 				1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */,
