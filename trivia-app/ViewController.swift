@@ -10,34 +10,49 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var bottomCustomButton = CustomButton()
-    var accentButton = AccentButton()
+    var accentButton: CustomButton!
+    var primaryButton: CustomButton!
+    var secondaryButton: CustomButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        setupBottomButtonConstraints()
-        setupTopButtonConstraints()
-    }
-    
-    func setupBottomButtonConstraints() {
-        view.addSubview(bottomCustomButton)
-        bottomCustomButton.translatesAutoresizingMaskIntoConstraints = false
-        bottomCustomButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
-        bottomCustomButton.widthAnchor.constraint(equalToConstant: 315).isActive = true
-        bottomCustomButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        bottomCustomButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200).isActive = true
-    }
-    
-    func setupTopButtonConstraints() {
-        view.addSubview(accentButton)
-        accentButton.translatesAutoresizingMaskIntoConstraints = false
-        accentButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
-        accentButton.widthAnchor.constraint(equalToConstant: 315).isActive = true
-        accentButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        accentButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -400).isActive = true
+        accentButton = CustomButton(image: "AccentButton", titleColor: UIColor(named: "White")) {
+            print("Accent Button Pressed")
+        }
+        primaryButton = CustomButton(image: "PrimaryButton", titleColor: UIColor(named: "White")) {
+            print("Primary Button Pressed")
+        }
         
+        secondaryButton = CustomButton(image: "SecondaryButton", titleColor: UIColor(named: "Primary")) {
+            print("Primary Button Pressed")
+        }
+        
+        accentButton.setTitle("Accent Button", for: .normal)
+        primaryButton.setTitle("Primary Button", for: .normal)
+        secondaryButton.setTitle("Secondary Button", for: .normal)
+        setupAccentButtonConstraints()
     }
+    
+    func setupAccentButtonConstraints() {
+        view.addSubview(accentButton)
+        accentButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
+        accentButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        accentButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200).isActive = true
+        accentButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
+        accentButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+        
+        view.addSubview(primaryButton)
+        primaryButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
+        primaryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        primaryButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -400).isActive = true
+        
+        view.addSubview(secondaryButton)
+        secondaryButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
+        secondaryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        secondaryButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -600).isActive = true
+    }
+
 }
 

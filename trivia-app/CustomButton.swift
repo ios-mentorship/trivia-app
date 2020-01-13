@@ -9,9 +9,30 @@
 import UIKit
 
 class CustomButton: UIButton {
+    
+    private var image: String!
+    private var titleColor: UIColor!
+    private var action: (() -> Void)!
+    
+    private var defaultImage: UIImage? {
+        UIImage(named: image) as UIImage?
+    }
+    
+    private var selectedImage: UIImage? {
+        UIImage(named: "\(image ?? "")Selected") as UIImage?
+    }
+    
+    convenience init(image: String, titleColor: UIColor? = .white, action: @escaping () -> Void) {
+        self.init(frame: .zero)
+        translatesAutoresizingMaskIntoConstraints = false
+        self.image = image
+        self.titleColor = titleColor
+        self.action = action
+        setupButton()
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupButton()
     }
     
     
@@ -24,11 +45,10 @@ class CustomButton: UIButton {
     func setupButton() {
         adjustsImageWhenHighlighted = false
         addActionToBottomButton()
-        let raisedBackgroundImage = UIImage(named: "Primary Button") as UIImage?
-        setBackgroundImage(raisedBackgroundImage, for: .normal)
-        setTitle("Get started", for: .normal)
-        setTitleColor(UIColor(named: "LightGray"), for: .normal)
-        titleLabel?.font     = UIFont(name: "Comfortaa-Bold", size: 24)
+        setBackgroundImage(defaultImage, for: .normal)
+        setTitleColor(titleColor, for: .normal)
+        titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 24)
+        contentEdgeInsets = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
     }
     
     func addActionToBottomButton() {
@@ -37,12 +57,13 @@ class CustomButton: UIButton {
     }
     
     @objc func buttonPressed() {
-        let pressedBackgroundImage = UIImage(named: "Primary Button Pressed") as UIImage?
-        setBackgroundImage(pressedBackgroundImage, for: .normal)
+        let generator = UIImpactFeedbackGenerator(style: .soft)
+        generator.impactOccurred()
+        setBackgroundImage(selectedImage, for: .normal)
     }
     
     @objc func buttonReleased() {
-        let backgroundImage = UIImage(named: "Primary Button") as UIImage?
-        setBackgroundImage(backgroundImage, for: .normal)
+        setBackgroundImage(defaultImage, for: .normal)
+        action()
     }
 }
