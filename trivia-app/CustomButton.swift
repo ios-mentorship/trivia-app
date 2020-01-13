@@ -13,6 +13,8 @@ class CustomButton: UIButton {
     private var image: String!
     private var titleColor: UIColor!
     private var action: (() -> Void)!
+    var constraintReference: NSLayoutConstraint?
+    
     
     private var defaultImage: UIImage? {
         UIImage(named: image) as UIImage?
@@ -60,10 +62,16 @@ class CustomButton: UIButton {
         let generator = UIImpactFeedbackGenerator(style: .soft)
         generator.impactOccurred()
         setBackgroundImage(selectedImage, for: .normal)
+        
+        constraintReference?.constant += 3
+        self.superview?.layoutIfNeeded()
+
     }
     
     @objc func buttonReleased() {
         setBackgroundImage(defaultImage, for: .normal)
         action()
+        constraintReference?.constant -= 3
+        self.superview?.layoutIfNeeded()
     }
 }

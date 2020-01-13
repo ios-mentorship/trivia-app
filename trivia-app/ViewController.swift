@@ -39,19 +39,27 @@ class ViewController: UIViewController {
         view.addSubview(accentButton)
         accentButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
         accentButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        accentButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200).isActive = true
+        
+        accentButton.constraintReference = accentButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200)
+        accentButton.constraintReference?.isActive = true
+        
         accentButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
         accentButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+        
+        
         
         view.addSubview(primaryButton)
         primaryButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
         primaryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        primaryButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -400).isActive = true
+        primaryButton.constraintReference = primaryButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -400)
+        primaryButton.constraintReference?.isActive = true
+        
         
         view.addSubview(secondaryButton)
         secondaryButton.heightAnchor.constraint(equalToConstant: 53).isActive = true
         secondaryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        secondaryButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -600).isActive = true
+        secondaryButton.constraintReference = secondaryButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -600)
+        secondaryButton.constraintReference?.isActive = true
     }
 
 }
