@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CustomButton: UIButton {
     
@@ -14,6 +15,7 @@ class CustomButton: UIButton {
     private var titleColor: UIColor!
     private var action: (() -> Void)!
     var constraintReference: NSLayoutConstraint?
+    var audioPlayer = AVAudioPlayer()
     
     
     private var defaultImage: UIImage? {
@@ -30,6 +32,14 @@ class CustomButton: UIButton {
         self.image = image
         self.titleColor = titleColor
         self.action = action
+        let sound = Bundle.main.path(forResource: "tap", ofType: "mp3")
+        
+        do {
+           audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        } catch {
+            print(error)
+        }
+        
         setupButton()
     }
     
@@ -65,6 +75,7 @@ class CustomButton: UIButton {
         
         constraintReference?.constant += 3
         self.superview?.layoutIfNeeded()
+        audioPlayer.play()
 
     }
     

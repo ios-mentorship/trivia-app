@@ -20,6 +20,8 @@
 		1935978823C80D43003A8CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1935978723C80D43003A8CD8 /* Assets.xcassets */; };
 		1935978B23C80D43003A8CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1935978923C80D43003A8CD8 /* LaunchScreen.storyboard */; };
 		19BC2AA223CBBACD00B19375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BC2AA123CBBACD00B19375 /* Main.storyboard */; };
+		19BC2AA823CC01A300B19375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC2AA723CC01A300B19375 /* AVFoundation.framework */; };
+		19BC2AAA23CC037C00B19375 /* tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19BC2AA923CC037C00B19375 /* tap.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1935978A23C80D43003A8CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1935978C23C80D43003A8CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19BC2AA123CBBACD00B19375 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		19BC2AA723CC01A300B19375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		19BC2AA923CC037C00B19375 /* tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tap.mp3; path = ../../../../../../../Desktop/tap.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BC2AA823CC01A300B19375 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,7 @@
 		190145CE23CA3AD500CB97F5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19BC2AA323CC011000B19375 /* Sounds */,
 				190145E023CACA6200CB97F5 /* Fonts */,
 				190145D023CA3AEE00CB97F5 /* Colors */,
 				190145CF23CA3AE600CB97F5 /* Images */,
@@ -101,6 +107,7 @@
 			children = (
 				1935977D23C80D40003A8CD8 /* trivia-app */,
 				1935977C23C80D40003A8CD8 /* Products */,
+				19BC2AA623CC01A300B19375 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +133,22 @@
 				190145EC23CAD4F700CB97F5 /* CustomButton.swift */,
 			);
 			path = "trivia-app";
+			sourceTree = "<group>";
+		};
+		19BC2AA323CC011000B19375 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				19BC2AA923CC037C00B19375 /* tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		19BC2AA623CC01A300B19375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19BC2AA723CC01A300B19375 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +215,7 @@
 				190145D223CA3D1100CB97F5 /* Colors.xcassets in Resources */,
 				1935978823C80D43003A8CD8 /* Assets.xcassets in Resources */,
 				190145E623CACAC400CB97F5 /* Comfortaa-Regular.ttf in Resources */,
+				19BC2AAA23CC037C00B19375 /* tap.mp3 in Resources */,
 				19BC2AA223CBBACD00B19375 /* Main.storyboard in Resources */,
 				190145E723CACAC400CB97F5 /* Comfortaa-Medium.ttf in Resources */,
 				190145E823CACAC400CB97F5 /* Comfortaa-Bold.ttf in Resources */,
