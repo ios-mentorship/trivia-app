@@ -20,6 +20,7 @@
 		1935978823C80D43003A8CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1935978723C80D43003A8CD8 /* Assets.xcassets */; };
 		1935978B23C80D43003A8CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1935978923C80D43003A8CD8 /* LaunchScreen.storyboard */; };
 		1970659A23CE6B0B0077C447 /* tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1970659923CE6B0B0077C447 /* tap.mp3 */; };
+		1970659C23CE71CA0077C447 /* SelectableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970659B23CE71CA0077C447 /* SelectableCard.swift */; };
 		19BC2AA223CBBACD00B19375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BC2AA123CBBACD00B19375 /* Main.storyboard */; };
 		19BC2AA823CC01A300B19375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC2AA723CC01A300B19375 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		1935978A23C80D43003A8CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1935978C23C80D43003A8CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1970659923CE6B0B0077C447 /* tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tap.mp3; sourceTree = "<group>"; };
+		1970659B23CE71CA0077C447 /* SelectableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCard.swift; sourceTree = "<group>"; };
 		19BC2AA123CBBACD00B19375 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		19BC2AA723CC01A300B19375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				1935978923C80D43003A8CD8 /* LaunchScreen.storyboard */,
 				1935978C23C80D43003A8CD8 /* Info.plist */,
 				190145EC23CAD4F700CB97F5 /* CustomButton.swift */,
+				1970659B23CE71CA0077C447 /* SelectableCard.swift */,
 			);
 			path = "trivia-app";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				1935978323C80D40003A8CD8 /* ViewController.swift in Sources */,
 				1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */,
 				1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */,
+				1970659C23CE71CA0077C447 /* SelectableCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
