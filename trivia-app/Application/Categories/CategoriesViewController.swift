@@ -9,8 +9,22 @@
 import UIKit
 
 class CategoriesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    let items = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+            
+    let categories: [[String: String]] = [
+        ["id": "10", "title": "Books", "image": "Books"],
+        ["id": "27", "title": "Animals", "image": "Animals"],
+        ["id": "26", "title": "Celebrities", "image": "Celebrities"],
+        ["id": "18", "title": "Computers", "image": "Computers"],
+        ["id": "9", "title": "General Knowledge", "image": "GeneralKnowledge"],
+        ["id": "19", "title": "Math", "image": "Math"],
+        ["id": "12", "title": "Music", "image": "Music"],
+        ["id": "17", "title": "Science", "image": "Science"],
+        ["id": "25", "title": "Art", "image": "Arts"],
+        ["id": "28", "title": "Vehicles", "image": "Vehicles"],
+        ["id": "21", "title": "Sports", "image": "Sports"],
+        ["id": "15", "title": "Games", "image": "VideoGames"],
+        ["id": "11", "title": "Films", "image": "Films"]
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +33,21 @@ class CategoriesViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-        cell.myLabel.text = items[indexPath.item]
+        let cell: CategoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
+        let category = categories[indexPath.row]
+        
+        let categoryImageName = category["image"] ?? "Books"
+        let categoryImage = UIImage(named: categoryImageName)
+        //let categoryTitle = category["title"]
+                
+        cell.categoryImage = UIImageView(image: categoryImage)
+        
+        //let text = indexPath.item
+        //cell.myLabel.text = text
         return cell
     }
     
