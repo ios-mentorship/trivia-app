@@ -100,6 +100,7 @@
 		190145EB23CACDA000CB97F5 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				197065A123CECF620077C447 /* Main */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -124,18 +125,57 @@
 		1935977D23C80D40003A8CD8 /* trivia-app */ = {
 			isa = PBXGroup;
 			children = (
+				197065A223CECFE70077C447 /* Components */,
+				1970659F23CECE980077C447 /* Extensions */,
+				1970659E23CECE8D0077C447 /* Base */,
+				1970659D23CECE800077C447 /* Utils */,
 				190145EB23CACDA000CB97F5 /* Application */,
 				190145CE23CA3AD500CB97F5 /* Resources */,
-				1935977E23C80D40003A8CD8 /* AppDelegate.swift */,
-				1935978023C80D40003A8CD8 /* SceneDelegate.swift */,
 				19BC2AA123CBBACD00B19375 /* Main.storyboard */,
-				1935978223C80D40003A8CD8 /* ViewController.swift */,
+			);
+			path = "trivia-app";
+			sourceTree = "<group>";
+		};
+		1970659D23CECE800077C447 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1970659E23CECE8D0077C447 /* Base */ = {
+			isa = PBXGroup;
+			children = (
 				1935978923C80D43003A8CD8 /* LaunchScreen.storyboard */,
 				1935978C23C80D43003A8CD8 /* Info.plist */,
+				1935977E23C80D40003A8CD8 /* AppDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1970659F23CECE980077C447 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		197065A123CECF620077C447 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1935978023C80D40003A8CD8 /* SceneDelegate.swift */,
+				1935978223C80D40003A8CD8 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		197065A223CECFE70077C447 /* Components */ = {
+			isa = PBXGroup;
+			children = (
 				190145EC23CAD4F700CB97F5 /* CustomButton.swift */,
 				1970659B23CE71CA0077C447 /* SelectableCard.swift */,
 			);
-			path = "trivia-app";
+			path = Components;
 			sourceTree = "<group>";
 		};
 		19BC2AA323CC011000B19375 /* Sounds */ = {
@@ -373,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "trivia-app/Info.plist";
+				INFOPLIST_FILE = "trivia-app/Base/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "trivia-app/Info.plist";
+				INFOPLIST_FILE = "trivia-app/Base/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
