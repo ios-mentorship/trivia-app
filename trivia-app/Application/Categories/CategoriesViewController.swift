@@ -27,6 +27,7 @@ class CategoriesViewController: UIViewController {
         ["id": "15", "title": "Games", "image": "VideoGames"],
         ["id": "11", "title": "Films", "image": "Films"]
     ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

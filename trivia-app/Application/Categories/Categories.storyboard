@@ -31,7 +31,7 @@
                                 <state key="normal" backgroundImage="x"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-eW-xMC">
-                                <rect key="frame" x="138.5" y="84" width="137.5" height="27"/>
+                                <rect key="frame" x="149" y="84" width="116.5" height="28"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="24"/>
                                 <color key="textColor" name="White"/>
                                 <nil key="highlightedColor"/>
@@ -54,14 +54,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-e5-InL">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-Ia-ccq" customClass="SelectableCard" customModule="trivia_app" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
-                                                    <color key="backgroundColor" name="LightGray"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="91" id="Cfd-7Z-q1f"/>
-                                                        <constraint firstAttribute="height" constant="103" id="dw6-oO-oN4"/>
-                                                    </constraints>
-                                                </view>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" backgroundImage="BaseCard"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="image" value="BaseCard"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
                                                     <rect key="frame" x="15" y="12" width="61" height="60"/>
                                                     <constraints>
@@ -70,18 +70,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21D-CW-TlU">
-                                                    <rect key="frame" x="15" y="80" width="61" height="11.5"/>
-                                                    <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="10"/>
-                                                    <color key="textColor" name="DarkBlue"/>
+                                                    <rect key="frame" x="15" y="78" width="61" height="10.5"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="9"/>
+                                                    <color key="textColor" red="0.49411764705882355" green="0.51372549019607838" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="centerX" secondItem="U7z-Gg-bKJ" secondAttribute="centerX" id="02S-KA-2ze"/>
                                                 <constraint firstAttribute="trailing" secondItem="21D-CW-TlU" secondAttribute="trailing" constant="15" id="5lp-cx-mVO"/>
-                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="centerY" secondItem="U7z-Gg-bKJ" secondAttribute="centerY" id="9Nk-8F-Qtk"/>
                                                 <constraint firstItem="21D-CW-TlU" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="fRj-lq-Fmd"/>
-                                                <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="8" id="fXg-Y1-ZNc"/>
+                                                <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="6" id="fXg-Y1-ZNc"/>
                                                 <constraint firstItem="NMB-T4-oe5" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" constant="12" id="mIb-Rv-IBh"/>
                                                 <constraint firstAttribute="trailing" secondItem="NMB-T4-oe5" secondAttribute="trailing" constant="15" id="mPg-di-eyK"/>
                                                 <constraint firstItem="NMB-T4-oe5" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="vqu-0D-gYL"/>
@@ -89,6 +87,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="91" height="103"/>
                                         <connections>
+                                            <outlet property="categoryButtonContainer" destination="xOe-Ia-ccq" id="Raf-Pf-j8Q"/>
                                             <outlet property="categoryImage" destination="NMB-T4-oe5" id="FVW-7k-cZX"/>
                                             <outlet property="categoryTitle" destination="21D-CW-TlU" id="TFb-rX-im7"/>
                                         </connections>
@@ -131,14 +130,9 @@
     </scenes>
     <resources>
         <image name="AccentButton" width="34" height="53"/>
+        <image name="BaseCard" width="47" height="39"/>
         <image name="Books" width="60" height="60"/>
         <image name="x" width="22" height="22"/>
-        <namedColor name="DarkBlue">
-            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="LightGray">
-            <color red="0.89803921568627454" green="0.92941176470588238" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Primary">
             <color red="0.48627450980392156" green="0.49803921568627452" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

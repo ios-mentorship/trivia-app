@@ -2,7 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Base Card.pdf"
+      "filename" : "Base Card.pdf",
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 20,
+          "top" : 18,
+          "right" : 23,
+          "left" : 23
+        }
+      }
     }
   ],
   "info" : {
