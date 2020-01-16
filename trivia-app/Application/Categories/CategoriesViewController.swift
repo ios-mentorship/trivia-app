@@ -8,8 +8,10 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-            
+class CategoriesViewController: UIViewController {
+    
+    @IBOutlet weak var categoriesCollectionView: UICollectionView!
+    
     let categories: [[String: String]] = [
         ["id": "10", "title": "Books", "image": "Books"],
         ["id": "27", "title": "Animals", "image": "Animals"],
@@ -30,29 +32,14 @@ class CategoriesViewController: UIViewController, UICollectionViewDataSource, UI
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        config()
+        categoriesCollectionView!.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: CategoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-        let category = categories[indexPath.row]
-        
-        let categoryImageName = category["image"] ?? "Books"
-        let categoryImage = UIImage(named: categoryImageName)
-        //let categoryTitle = category["title"]
-                
-        cell.categoryImage = UIImageView(image: categoryImage)
-        
-        //let text = indexPath.item
-        //cell.myLabel.text = text
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+    func config() {
+        categoriesCollectionView.delegate = self
+        categoriesCollectionView.dataSource = self
     }
 
 }

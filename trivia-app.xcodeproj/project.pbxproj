@@ -14,6 +14,7 @@
 		190145E923CACAC400CB97F5 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */; };
 		190145EA23CACAC400CB97F5 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */; };
 		190145ED23CAD4F700CB97F5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190145EC23CAD4F700CB97F5 /* CustomButton.swift */; };
+		193079D423CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */; };
 		1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935977E23C80D40003A8CD8 /* AppDelegate.swift */; };
 		1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978023C80D40003A8CD8 /* SceneDelegate.swift */; };
 		1935978323C80D40003A8CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978223C80D40003A8CD8 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
 		190145EC23CAD4F700CB97F5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1935977B23C80D40003A8CD8 /* trivia-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trivia-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1935977E23C80D40003A8CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1935978023C80D40003A8CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				197065A623CED42B0077C447 /* Categories.storyboard */,
 				197065A823CEDCA20077C447 /* CategoryCell.swift */,
 				197065AA23CEDE1E0077C447 /* CategoriesViewController.swift */,
+				193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				197065A923CEDCA20077C447 /* CategoryCell.swift in Sources */,
 				1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */,
 				1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */,
+				193079D423CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift in Sources */,
 				197065AB23CEDE1E0077C447 /* CategoriesViewController.swift in Sources */,
 				1970659C23CE71CA0077C447 /* SelectableCard.swift in Sources */,
 			);

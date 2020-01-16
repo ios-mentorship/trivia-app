@@ -12,8 +12,8 @@
         <array key="Comfortaa-Bold.ttf">
             <string>Comfortaa-Bold</string>
         </array>
-        <array key="Comfortaa-Regular.ttf">
-            <string>Comfortaa-Regular</string>
+        <array key="Comfortaa-SemiBold.ttf">
+            <string>Comfortaa-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -39,8 +39,8 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-ES-9gW">
                                 <rect key="frame" x="20" y="141" width="374" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUL-Ig-xsb">
+                                <color key="backgroundColor" name="Primary"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUL-Ig-xsb">
                                     <size key="itemSize" width="91" height="103"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -54,31 +54,43 @@
                                             <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xGE-sN-bF0">
-                                                    <rect key="frame" x="15" y="12" width="60" height="60"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-e5-InL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
+                                                    <color key="backgroundColor" name="LightGray"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="5qz-k6-bPY"/>
+                                                        <constraint firstAttribute="width" constant="91" id="Cfd-7Z-q1f"/>
+                                                        <constraint firstAttribute="height" constant="103" id="dw6-oO-oN4"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
+                                                    <rect key="frame" x="15" y="12" width="61" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="2Qa-h7-Ncc"/>
+                                                        <constraint firstAttribute="width" constant="60" id="apc-qL-JSe"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQO-M9-1fb">
-                                                    <rect key="frame" x="33" y="80" width="24" height="9"/>
-                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="8"/>
-                                                    <color key="textColor" red="0.094117647058823528" green="0.10196078431372549" blue="0.32549019607843138" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21D-CW-TlU">
+                                                    <rect key="frame" x="15" y="80" width="61" height="11.5"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="10"/>
+                                                    <color key="textColor" name="DarkBlue"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xGE-sN-bF0" firstAttribute="centerX" secondItem="U7z-Gg-bKJ" secondAttribute="centerX" id="4am-Mb-8YF"/>
-                                                <constraint firstItem="xGE-sN-bF0" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="9eg-pO-evz"/>
-                                                <constraint firstItem="xGE-sN-bF0" firstAttribute="centerX" secondItem="fQO-M9-1fb" secondAttribute="centerX" id="Fno-rm-7Be"/>
-                                                <constraint firstItem="fQO-M9-1fb" firstAttribute="top" secondItem="xGE-sN-bF0" secondAttribute="bottom" constant="8" id="dH3-NI-UWM"/>
-                                                <constraint firstItem="xGE-sN-bF0" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" constant="12" id="qY4-nT-abG"/>
+                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="centerX" secondItem="U7z-Gg-bKJ" secondAttribute="centerX" id="02S-KA-2ze"/>
+                                                <constraint firstAttribute="trailing" secondItem="21D-CW-TlU" secondAttribute="trailing" constant="15" id="5lp-cx-mVO"/>
+                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="centerY" secondItem="U7z-Gg-bKJ" secondAttribute="centerY" id="9Nk-8F-Qtk"/>
+                                                <constraint firstItem="21D-CW-TlU" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="fRj-lq-Fmd"/>
+                                                <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="8" id="fXg-Y1-ZNc"/>
+                                                <constraint firstItem="NMB-T4-oe5" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" constant="12" id="mIb-Rv-IBh"/>
+                                                <constraint firstAttribute="trailing" secondItem="NMB-T4-oe5" secondAttribute="trailing" constant="15" id="mPg-di-eyK"/>
+                                                <constraint firstItem="NMB-T4-oe5" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="vqu-0D-gYL"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="91" height="103"/>
                                         <connections>
-                                            <outlet property="categoryImage" destination="xGE-sN-bF0" id="gJB-sM-ccf"/>
-                                            <outlet property="categoryTitle" destination="fQO-M9-1fb" id="xh2-mY-jCG"/>
+                                            <outlet property="categoryImage" destination="NMB-T4-oe5" id="FVW-7k-cZX"/>
+                                            <outlet property="categoryTitle" destination="21D-CW-TlU" id="TFb-rX-im7"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -108,6 +120,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pLd-cK-9HU"/>
                     </view>
+                    <connections>
+                        <outlet property="categoriesCollectionView" destination="RY8-ES-9gW" id="qND-Ke-5PE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSi-eH-dVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +131,14 @@
     </scenes>
     <resources>
         <image name="AccentButton" width="34" height="53"/>
+        <image name="Books" width="60" height="60"/>
         <image name="x" width="22" height="22"/>
+        <namedColor name="DarkBlue">
+            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGray">
+            <color red="0.89803921568627454" green="0.92941176470588238" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Primary">
             <color red="0.48627450980392156" green="0.49803921568627452" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
