@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWj-Lq-NXE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWj-Lq-NXE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -40,52 +40,66 @@
                                 <rect key="frame" x="20" y="141" width="374" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Primary"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUL-Ig-xsb">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUL-Ig-xsb">
                                     <size key="itemSize" width="91" height="103"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="AUu-lP-XE3" customClass="CategoryCell" customModule="trivia_app" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="AUu-lP-XE3" customClass="CategoryCell" customModule="trivia_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U7z-Gg-bKJ">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U7z-Gg-bKJ">
                                             <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-Ia-ccq" customClass="SelectableCard" customModule="trivia_app" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XL-rd-DF7">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" backgroundImage="BaseCard"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="image" value="BaseCard"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
-                                                    <rect key="frame" x="15" y="12" width="61" height="60"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BaseCard" translatesAutoresizingMaskIntoConstraints="NO" id="0wM-me-Sbk" customClass="SelectableView" customModule="trivia_app" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="imagePath" value="BaseCard"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
+                                                            <rect key="frame" x="15" y="15" width="61" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="60" id="2Qa-h7-Ncc"/>
+                                                                <constraint firstAttribute="width" constant="60" id="apc-qL-JSe"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21D-CW-TlU">
+                                                            <rect key="frame" x="15" y="78" width="61" height="10"/>
+                                                            <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="9"/>
+                                                            <color key="textColor" red="0.49411764705882355" green="0.51372549019607838" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="2Qa-h7-Ncc"/>
-                                                        <constraint firstAttribute="width" constant="60" id="apc-qL-JSe"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0wM-me-Sbk" secondAttribute="bottom" id="39O-Z6-3Ig"/>
+                                                        <constraint firstItem="NMB-T4-oe5" firstAttribute="top" secondItem="5XL-rd-DF7" secondAttribute="top" constant="15" id="8gA-au-dHF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NMB-T4-oe5" secondAttribute="trailing" constant="15" id="9ut-mj-jJ9"/>
+                                                        <constraint firstItem="0wM-me-Sbk" firstAttribute="leading" secondItem="5XL-rd-DF7" secondAttribute="leading" id="GIs-Yl-b3B"/>
+                                                        <constraint firstAttribute="bottom" secondItem="21D-CW-TlU" secondAttribute="bottom" constant="15" id="LMA-D1-VgH"/>
+                                                        <constraint firstItem="NMB-T4-oe5" firstAttribute="leading" secondItem="5XL-rd-DF7" secondAttribute="leading" constant="15" id="PKN-VN-pCt"/>
+                                                        <constraint firstItem="0wM-me-Sbk" firstAttribute="top" secondItem="5XL-rd-DF7" secondAttribute="top" id="dxX-Bh-nZ4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="21D-CW-TlU" secondAttribute="trailing" constant="15" id="f2B-bz-hB1"/>
+                                                        <constraint firstItem="21D-CW-TlU" firstAttribute="leading" secondItem="5XL-rd-DF7" secondAttribute="leading" constant="15" id="gg9-dO-0aG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0wM-me-Sbk" secondAttribute="trailing" id="pMc-QG-b6r"/>
+                                                        <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="3" id="yLu-W1-yeo"/>
                                                     </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21D-CW-TlU">
-                                                    <rect key="frame" x="15" y="78" width="61" height="10.5"/>
-                                                    <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="9"/>
-                                                    <color key="textColor" red="0.49411764705882355" green="0.51372549019607838" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="21D-CW-TlU" secondAttribute="trailing" constant="15" id="5lp-cx-mVO"/>
-                                                <constraint firstItem="21D-CW-TlU" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="fRj-lq-Fmd"/>
-                                                <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="6" id="fXg-Y1-ZNc"/>
-                                                <constraint firstItem="NMB-T4-oe5" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" constant="12" id="mIb-Rv-IBh"/>
-                                                <constraint firstAttribute="trailing" secondItem="NMB-T4-oe5" secondAttribute="trailing" constant="15" id="mPg-di-eyK"/>
-                                                <constraint firstItem="NMB-T4-oe5" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="vqu-0D-gYL"/>
+                                                <constraint firstItem="5XL-rd-DF7" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" id="20a-bx-HLt"/>
+                                                <constraint firstAttribute="trailing" secondItem="5XL-rd-DF7" secondAttribute="trailing" id="9tR-uk-zvl"/>
+                                                <constraint firstItem="5XL-rd-DF7" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" id="YDF-gr-E04"/>
+                                                <constraint firstAttribute="bottom" secondItem="5XL-rd-DF7" secondAttribute="bottom" id="k9R-zn-c6S"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="91" height="103"/>
                                         <connections>
                                             <outlet property="categoryImage" destination="NMB-T4-oe5" id="FVW-7k-cZX"/>
                                             <outlet property="categoryTitle" destination="21D-CW-TlU" id="TFb-rX-im7"/>
