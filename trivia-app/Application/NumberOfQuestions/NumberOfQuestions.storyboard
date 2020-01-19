@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="phP-rO-dfE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Number Of Questions View Controller-->
+        <scene sceneID="kp4-wb-nwX">
+            <objects>
+                <viewController id="phP-rO-dfE" customClass="NumberOfQuestionsViewController" customModule="trivia_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GXH-CV-2HP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGx-5Y-gCI">
+                                <rect key="frame" x="350" y="64" width="44" height="44"/>
+                                <state key="normal" backgroundImage="x"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylo-8J-ZQl">
+                                <rect key="frame" x="94.5" y="124" width="225" height="28"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="24"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="tGo-7H-AeF">
+                                <rect key="frame" x="28" y="341" width="358" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="phP-rO-dfE" eventType="valueChanged" id="KWh-5h-D75"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Gp-duD">
+                                <rect key="frame" x="187" y="207" width="40.5" height="84"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="72"/>
+                                <color key="textColor" name="LightGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Primary"/>
+                        <constraints>
+                            <constraint firstItem="Onu-Gp-duD" firstAttribute="top" secondItem="Ylo-8J-ZQl" secondAttribute="bottom" constant="55" id="2I9-gz-HSi"/>
+                            <constraint firstItem="5k8-GB-de3" firstAttribute="trailing" secondItem="tGo-7H-AeF" secondAttribute="trailing" constant="30" id="2gd-8Q-sQc"/>
+                            <constraint firstItem="tGo-7H-AeF" firstAttribute="top" secondItem="Onu-Gp-duD" secondAttribute="bottom" constant="50" id="4Mr-Fs-0iz"/>
+                            <constraint firstItem="yGx-5Y-gCI" firstAttribute="top" secondItem="5k8-GB-de3" secondAttribute="top" constant="20" id="7AM-CD-dkp"/>
+                            <constraint firstItem="Ylo-8J-ZQl" firstAttribute="top" secondItem="5k8-GB-de3" secondAttribute="top" constant="80" id="8pP-Wc-YIQ"/>
+                            <constraint firstItem="tGo-7H-AeF" firstAttribute="leading" secondItem="5k8-GB-de3" secondAttribute="leading" constant="30" id="DJ7-B5-wUz"/>
+                            <constraint firstItem="5k8-GB-de3" firstAttribute="trailing" secondItem="yGx-5Y-gCI" secondAttribute="trailing" constant="20" id="F3S-34-fiW"/>
+                            <constraint firstItem="Onu-Gp-duD" firstAttribute="centerX" secondItem="GXH-CV-2HP" secondAttribute="centerX" id="KYt-Uh-WQL"/>
+                            <constraint firstItem="Ylo-8J-ZQl" firstAttribute="centerX" secondItem="GXH-CV-2HP" secondAttribute="centerX" id="owx-sI-Rej"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5k8-GB-de3"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Onu-Gp-duD" id="6Oq-0U-ScD"/>
+                        <outlet property="slider" destination="tGo-7H-AeF" id="T1p-EB-FdH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGT-rp-Kv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x" width="22" height="22"/>
+        <namedColor name="LightGray">
+            <color red="0.89803921568627454" green="0.92941176470588238" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.48627450980392156" green="0.49803921568627452" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

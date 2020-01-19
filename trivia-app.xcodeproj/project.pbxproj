@@ -14,6 +14,8 @@
 		190145E923CACAC400CB97F5 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */; };
 		190145EA23CACAC400CB97F5 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */; };
 		190145ED23CAD4F700CB97F5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190145EC23CAD4F700CB97F5 /* CustomButton.swift */; };
+		1910DC9F23D4962200843B9D /* NumberOfQuestions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1910DC9E23D4962200843B9D /* NumberOfQuestions.storyboard */; };
+		1910DCA123D498C800843B9D /* NumberOfQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910DCA023D498C800843B9D /* NumberOfQuestionsViewController.swift */; };
 		193079D423CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */; };
 		1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935977E23C80D40003A8CD8 /* AppDelegate.swift */; };
 		1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978023C80D40003A8CD8 /* SceneDelegate.swift */; };
@@ -38,6 +40,8 @@
 		190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
 		190145EC23CAD4F700CB97F5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1910DC9E23D4962200843B9D /* NumberOfQuestions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NumberOfQuestions.storyboard; sourceTree = "<group>"; };
+		1910DCA023D498C800843B9D /* NumberOfQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfQuestionsViewController.swift; sourceTree = "<group>"; };
 		193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1935977B23C80D40003A8CD8 /* trivia-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trivia-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1935977E23C80D40003A8CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,10 +114,20 @@
 		190145EB23CACDA000CB97F5 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1910DC9D23D495F400843B9D /* NumberOfQuestions */,
 				197065A523CED40F0077C447 /* Categories */,
 				197065A123CECF620077C447 /* Main */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		1910DC9D23D495F400843B9D /* NumberOfQuestions */ = {
+			isa = PBXGroup;
+			children = (
+				1910DC9E23D4962200843B9D /* NumberOfQuestions.storyboard */,
+				1910DCA023D498C800843B9D /* NumberOfQuestionsViewController.swift */,
+			);
+			path = NumberOfQuestions;
 			sourceTree = "<group>";
 		};
 		1935977223C80D40003A8CD8 = {
@@ -283,6 +297,7 @@
 				190145E623CACAC400CB97F5 /* Comfortaa-Regular.ttf in Resources */,
 				197065A723CED42B0077C447 /* Categories.storyboard in Resources */,
 				1970659A23CE6B0B0077C447 /* tap.mp3 in Resources */,
+				1910DC9F23D4962200843B9D /* NumberOfQuestions.storyboard in Resources */,
 				19BC2AA223CBBACD00B19375 /* Main.storyboard in Resources */,
 				190145E723CACAC400CB97F5 /* Comfortaa-Medium.ttf in Resources */,
 				190145E823CACAC400CB97F5 /* Comfortaa-Bold.ttf in Resources */,
@@ -298,6 +313,7 @@
 			files = (
 				197065A423CED3230077C447 /* BaseCard.swift in Sources */,
 				190145ED23CAD4F700CB97F5 /* CustomButton.swift in Sources */,
+				1910DCA123D498C800843B9D /* NumberOfQuestionsViewController.swift in Sources */,
 				1935978323C80D40003A8CD8 /* ViewController.swift in Sources */,
 				197065A923CEDCA20077C447 /* CategoryCell.swift in Sources */,
 				1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */,
