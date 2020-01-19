@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWj-Lq-NXE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWj-Lq-NXE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -31,7 +31,7 @@
                                 <state key="normal" backgroundImage="x"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-eW-xMC">
-                                <rect key="frame" x="138.5" y="84" width="137.5" height="27"/>
+                                <rect key="frame" x="149" y="84" width="116.5" height="28"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="24"/>
                                 <color key="textColor" name="White"/>
                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="20" y="141" width="374" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Primary"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUL-Ig-xsb">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUL-Ig-xsb">
                                     <size key="itemSize" width="91" height="103"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -56,38 +56,40 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-e5-InL">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
+                                                            <rect key="frame" x="15" y="15" width="61" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="60" id="2Qa-h7-Ncc"/>
+                                                                <constraint firstAttribute="width" constant="60" id="apc-qL-JSe"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21D-CW-TlU">
+                                                            <rect key="frame" x="15" y="78" width="61" height="10"/>
+                                                            <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="10"/>
+                                                            <color key="textColor" name="DarkBlue"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" name="LightGray"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="91" id="Cfd-7Z-q1f"/>
-                                                        <constraint firstAttribute="height" constant="103" id="dw6-oO-oN4"/>
+                                                        <constraint firstItem="21D-CW-TlU" firstAttribute="leading" secondItem="Kfc-e5-InL" secondAttribute="leading" constant="15" id="Hqt-QD-dcy"/>
+                                                        <constraint firstItem="NMB-T4-oe5" firstAttribute="top" secondItem="Kfc-e5-InL" secondAttribute="top" constant="15" id="SLB-JK-Pae"/>
+                                                        <constraint firstAttribute="trailing" secondItem="21D-CW-TlU" secondAttribute="trailing" constant="15" id="VE4-CU-Xe8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="21D-CW-TlU" secondAttribute="bottom" constant="15" id="mk5-iR-nE1"/>
+                                                        <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="3" id="q9S-hb-4wj"/>
+                                                        <constraint firstItem="NMB-T4-oe5" firstAttribute="leading" secondItem="Kfc-e5-InL" secondAttribute="leading" constant="15" id="qoA-dz-ndZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NMB-T4-oe5" secondAttribute="trailing" constant="15" id="xig-kF-c9i"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
-                                                    <rect key="frame" x="15" y="12" width="61" height="60"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="2Qa-h7-Ncc"/>
-                                                        <constraint firstAttribute="width" constant="60" id="apc-qL-JSe"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21D-CW-TlU">
-                                                    <rect key="frame" x="15" y="80" width="61" height="11.5"/>
-                                                    <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="10"/>
-                                                    <color key="textColor" name="DarkBlue"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="centerX" secondItem="U7z-Gg-bKJ" secondAttribute="centerX" id="02S-KA-2ze"/>
-                                                <constraint firstAttribute="trailing" secondItem="21D-CW-TlU" secondAttribute="trailing" constant="15" id="5lp-cx-mVO"/>
-                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="centerY" secondItem="U7z-Gg-bKJ" secondAttribute="centerY" id="9Nk-8F-Qtk"/>
-                                                <constraint firstItem="21D-CW-TlU" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="fRj-lq-Fmd"/>
-                                                <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="8" id="fXg-Y1-ZNc"/>
-                                                <constraint firstItem="NMB-T4-oe5" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" constant="12" id="mIb-Rv-IBh"/>
-                                                <constraint firstAttribute="trailing" secondItem="NMB-T4-oe5" secondAttribute="trailing" constant="15" id="mPg-di-eyK"/>
-                                                <constraint firstItem="NMB-T4-oe5" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" constant="15" id="vqu-0D-gYL"/>
+                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" id="3T0-Sl-Xkr"/>
+                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" id="LZB-Tx-qba"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kfc-e5-InL" secondAttribute="trailing" id="VXE-Fh-4zA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kfc-e5-InL" secondAttribute="bottom" id="lLB-6Q-7aa"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="91" height="103"/>
                                         <connections>
                                             <outlet property="categoryImage" destination="NMB-T4-oe5" id="FVW-7k-cZX"/>
                                             <outlet property="categoryTitle" destination="21D-CW-TlU" id="TFb-rX-im7"/>
