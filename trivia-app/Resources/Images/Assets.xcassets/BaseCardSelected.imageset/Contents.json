@@ -2,7 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Base Card Pressed.pdf"
+      "filename" : "Base Card Pressed.pdf",
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 21,
+          "top" : 18,
+          "right" : 25,
+          "left" : 24
+        }
+      }
     }
   ],
   "info" : {

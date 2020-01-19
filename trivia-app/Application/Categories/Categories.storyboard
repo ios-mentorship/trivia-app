@@ -54,7 +54,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-e5-InL">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-Ia-ccq" customClass="SelectableCard" customModule="trivia_app" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
@@ -133,14 +133,9 @@
     </scenes>
     <resources>
         <image name="AccentButton" width="34" height="53"/>
+        <image name="BaseCard" width="47" height="39"/>
         <image name="Books" width="60" height="60"/>
         <image name="x" width="22" height="22"/>
-        <namedColor name="DarkBlue">
-            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="LightGray">
-            <color red="0.89803921568627454" green="0.92941176470588238" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Primary">
             <color red="0.48627450980392156" green="0.49803921568627452" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

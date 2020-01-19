@@ -11,8 +11,8 @@ import AVFoundation
 
 class SelectableCard: UIButton {
     
-    private var image: String!
-    private var action: (() -> Void)!
+    @IBInspectable private var image: String!
+    //private var action: (() -> Void)!
     var constraintReference: NSLayoutConstraint?
     var audioPlayer = AVAudioPlayer()
     
@@ -25,20 +25,14 @@ class SelectableCard: UIButton {
         UIImage(named: "\(image ?? "")Selected") as UIImage?
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupCard()
+    }
+    
     convenience init(image: String, action: @escaping () -> Void) {
         self.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
-        self.image = image
-        self.action = action
-        let sound = Bundle.main.path(forResource: "tap", ofType: "mp3")
-        
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-        } catch {
-            print(error)
-        }
-        
-        setupCard()
     }
     
     override init(frame: CGRect) {
@@ -48,7 +42,16 @@ class SelectableCard: UIButton {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupCard()
+        //self.action = action
+        let sound = Bundle.main.path(forResource: "tap", ofType: "mp3")
+//        adjustsImageWhenHighlighted = false
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        } catch {
+            print(error)
+        }
+        
     }
     
     
@@ -75,7 +78,7 @@ class SelectableCard: UIButton {
         }
         let generator = UIImpactFeedbackGenerator(style: .soft)
         generator.impactOccurred()
-        action()
+        //action()
         self.superview?.layoutIfNeeded()
         audioPlayer.play()
         
