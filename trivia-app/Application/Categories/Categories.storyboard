@@ -31,7 +31,7 @@
                                 <state key="normal" backgroundImage="x"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-eW-xMC">
-                                <rect key="frame" x="149" y="84" width="116.5" height="28"/>
+                                <rect key="frame" x="138.5" y="84" width="137.5" height="27"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="24"/>
                                 <color key="textColor" name="White"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +87,6 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="91" height="103"/>
                                         <connections>
-                                            <outlet property="categoryButtonContainer" destination="xOe-Ia-ccq" id="Raf-Pf-j8Q"/>
                                             <outlet property="categoryImage" destination="NMB-T4-oe5" id="FVW-7k-cZX"/>
                                             <outlet property="categoryTitle" destination="21D-CW-TlU" id="TFb-rX-im7"/>
                                         </connections>
