@@ -14,6 +14,7 @@
 		190145E923CACAC400CB97F5 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */; };
 		190145EA23CACAC400CB97F5 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */; };
 		190145ED23CAD4F700CB97F5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190145EC23CAD4F700CB97F5 /* CustomButton.swift */; };
+		193079D423CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */; };
 		1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935977E23C80D40003A8CD8 /* AppDelegate.swift */; };
 		1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978023C80D40003A8CD8 /* SceneDelegate.swift */; };
 		1935978323C80D40003A8CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935978223C80D40003A8CD8 /* ViewController.swift */; };
@@ -22,6 +23,9 @@
 		1970659A23CE6B0B0077C447 /* tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1970659923CE6B0B0077C447 /* tap.mp3 */; };
 		1970659C23CE71CA0077C447 /* SelectableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970659B23CE71CA0077C447 /* SelectableCard.swift */; };
 		197065A423CED3230077C447 /* BaseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197065A323CED3230077C447 /* BaseCard.swift */; };
+		197065A723CED42B0077C447 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197065A623CED42B0077C447 /* Categories.storyboard */; };
+		197065A923CEDCA20077C447 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197065A823CEDCA20077C447 /* CategoryCell.swift */; };
+		197065AB23CEDE1E0077C447 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197065AA23CEDE1E0077C447 /* CategoriesViewController.swift */; };
 		19BC2AA223CBBACD00B19375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BC2AA123CBBACD00B19375 /* Main.storyboard */; };
 		19BC2AA823CC01A300B19375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC2AA723CC01A300B19375 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +38,7 @@
 		190145E423CACAC400CB97F5 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		190145E523CACAC400CB97F5 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
 		190145EC23CAD4F700CB97F5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1935977B23C80D40003A8CD8 /* trivia-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trivia-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1935977E23C80D40003A8CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1935978023C80D40003A8CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,9 @@
 		1970659923CE6B0B0077C447 /* tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tap.mp3; sourceTree = "<group>"; };
 		1970659B23CE71CA0077C447 /* SelectableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCard.swift; sourceTree = "<group>"; };
 		197065A323CED3230077C447 /* BaseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCard.swift; sourceTree = "<group>"; };
+		197065A623CED42B0077C447 /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
+		197065A823CEDCA20077C447 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		197065AA23CEDE1E0077C447 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		19BC2AA123CBBACD00B19375 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		19BC2AA723CC01A300B19375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -102,6 +110,7 @@
 		190145EB23CACDA000CB97F5 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				197065A523CED40F0077C447 /* Categories */,
 				197065A123CECF620077C447 /* Main */,
 			);
 			path = Application;
@@ -179,6 +188,17 @@
 				197065A323CED3230077C447 /* BaseCard.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		197065A523CED40F0077C447 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				197065A623CED42B0077C447 /* Categories.storyboard */,
+				197065A823CEDCA20077C447 /* CategoryCell.swift */,
+				197065AA23CEDE1E0077C447 /* CategoriesViewController.swift */,
+				193079D323CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		19BC2AA323CC011000B19375 /* Sounds */ = {
@@ -261,6 +281,7 @@
 				190145D223CA3D1100CB97F5 /* Colors.xcassets in Resources */,
 				1935978823C80D43003A8CD8 /* Assets.xcassets in Resources */,
 				190145E623CACAC400CB97F5 /* Comfortaa-Regular.ttf in Resources */,
+				197065A723CED42B0077C447 /* Categories.storyboard in Resources */,
 				1970659A23CE6B0B0077C447 /* tap.mp3 in Resources */,
 				19BC2AA223CBBACD00B19375 /* Main.storyboard in Resources */,
 				190145E723CACAC400CB97F5 /* Comfortaa-Medium.ttf in Resources */,
@@ -278,8 +299,11 @@
 				197065A423CED3230077C447 /* BaseCard.swift in Sources */,
 				190145ED23CAD4F700CB97F5 /* CustomButton.swift in Sources */,
 				1935978323C80D40003A8CD8 /* ViewController.swift in Sources */,
+				197065A923CEDCA20077C447 /* CategoryCell.swift in Sources */,
 				1935977F23C80D40003A8CD8 /* AppDelegate.swift in Sources */,
 				1935978123C80D40003A8CD8 /* SceneDelegate.swift in Sources */,
+				193079D423CFDAB5005D2959 /* CategoriesViewControllerDelegate.swift in Sources */,
+				197065AB23CEDE1E0077C447 /* CategoriesViewController.swift in Sources */,
 				1970659C23CE71CA0077C447 /* SelectableCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

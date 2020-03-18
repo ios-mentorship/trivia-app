@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWj-Lq-NXE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-SemiBold.ttf">
+            <string>Comfortaa-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Categories View Controller-->
+        <scene sceneID="5Ve-ww-UeZ">
+            <objects>
+                <viewController id="aWj-Lq-NXE" customClass="CategoriesViewController" customModule="trivia_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w0U-aJ-mxl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2F-Iy-Ztp">
+                                <rect key="frame" x="354" y="44" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="x"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-eW-xMC">
+                                <rect key="frame" x="149" y="84" width="116.5" height="28"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="24"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-ES-9gW">
+                                <rect key="frame" x="20" y="141" width="374" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Primary"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUL-Ig-xsb">
+                                    <size key="itemSize" width="91" height="103"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="AUu-lP-XE3" customClass="CategoryCell" customModule="trivia_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U7z-Gg-bKJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-Ia-ccq" customClass="SelectableCard" customModule="trivia_app" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="91" height="103"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Books" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-T4-oe5">
+                                                            <rect key="frame" x="15" y="15" width="61" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="60" id="2Qa-h7-Ncc"/>
+                                                                <constraint firstAttribute="width" constant="60" id="apc-qL-JSe"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21D-CW-TlU">
+                                                            <rect key="frame" x="15" y="78" width="61" height="10"/>
+                                                            <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="10"/>
+                                                            <color key="textColor" name="DarkBlue"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="LightGray"/>
+                                                    <constraints>
+                                                        <constraint firstItem="21D-CW-TlU" firstAttribute="leading" secondItem="Kfc-e5-InL" secondAttribute="leading" constant="15" id="Hqt-QD-dcy"/>
+                                                        <constraint firstItem="NMB-T4-oe5" firstAttribute="top" secondItem="Kfc-e5-InL" secondAttribute="top" constant="15" id="SLB-JK-Pae"/>
+                                                        <constraint firstAttribute="trailing" secondItem="21D-CW-TlU" secondAttribute="trailing" constant="15" id="VE4-CU-Xe8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="21D-CW-TlU" secondAttribute="bottom" constant="15" id="mk5-iR-nE1"/>
+                                                        <constraint firstItem="21D-CW-TlU" firstAttribute="top" secondItem="NMB-T4-oe5" secondAttribute="bottom" constant="3" id="q9S-hb-4wj"/>
+                                                        <constraint firstItem="NMB-T4-oe5" firstAttribute="leading" secondItem="Kfc-e5-InL" secondAttribute="leading" constant="15" id="qoA-dz-ndZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NMB-T4-oe5" secondAttribute="trailing" constant="15" id="xig-kF-c9i"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="top" secondItem="U7z-Gg-bKJ" secondAttribute="top" id="3T0-Sl-Xkr"/>
+                                                <constraint firstItem="Kfc-e5-InL" firstAttribute="leading" secondItem="U7z-Gg-bKJ" secondAttribute="leading" id="LZB-Tx-qba"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kfc-e5-InL" secondAttribute="trailing" id="VXE-Fh-4zA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kfc-e5-InL" secondAttribute="bottom" id="lLB-6Q-7aa"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="NMB-T4-oe5" id="FVW-7k-cZX"/>
+                                            <outlet property="categoryTitle" destination="21D-CW-TlU" id="TFb-rX-im7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="aWj-Lq-NXE" id="QP2-Uk-cIP"/>
+                                    <outlet property="delegate" destination="aWj-Lq-NXE" id="y0t-Y4-q04"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWg-1E-Q8c">
+                                <rect key="frame" x="20" y="789" width="374" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="HnK-te-CWk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="Next" backgroundImage="AccentButton">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="Primary"/>
+                        <constraints>
+                            <constraint firstItem="xuY-eW-xMC" firstAttribute="top" secondItem="pLd-cK-9HU" secondAttribute="top" constant="40" id="7xk-q1-PKi"/>
+                            <constraint firstItem="xuY-eW-xMC" firstAttribute="centerX" secondItem="w0U-aJ-mxl" secondAttribute="centerX" id="X1f-Vt-xfu"/>
+                            <constraint firstItem="fWg-1E-Q8c" firstAttribute="bottom" secondItem="pLd-cK-9HU" secondAttribute="bottom" constant="-20" id="jNs-MT-Jt4"/>
+                            <constraint firstItem="fWg-1E-Q8c" firstAttribute="leading" secondItem="pLd-cK-9HU" secondAttribute="leading" constant="20" id="qDZ-As-sKV"/>
+                            <constraint firstItem="pLd-cK-9HU" firstAttribute="trailing" secondItem="fWg-1E-Q8c" secondAttribute="trailing" constant="20" id="yik-qe-UNB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pLd-cK-9HU"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoriesCollectionView" destination="RY8-ES-9gW" id="qND-Ke-5PE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSi-eH-dVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62.318840579710148" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AccentButton" width="34" height="53"/>
+        <image name="BaseCard" width="47" height="39"/>
+        <image name="Books" width="60" height="60"/>
+        <image name="x" width="22" height="22"/>
+        <namedColor name="Primary">
+            <color red="0.48627450980392156" green="0.49803921568627452" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
